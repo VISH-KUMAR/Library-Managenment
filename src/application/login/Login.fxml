@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.login.LoginController">
+   <children>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="57.0" prefWidth="700.0" style="-fx-text-fill: #3e7bb7; -fx-background-color: #000000;" text="Library Assistant Login" textAlignment="CENTER" textFill="#d02222" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="41.0" layoutY="186.0" prefHeight="44.0" prefWidth="222.0" promptText="UserName">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="41.0" layoutY="266.0" onAction="#handleLoginButton" prefHeight="44.0" prefWidth="222.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </JFXPasswordField>
+      
+      <ImageView fitHeight="443.0" fitWidth="403.0" layoutX="400.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../images/studymaterial.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="378.0" onAction="#handleLoginButton" prefHeight="50.0" prefWidth="100.0" ripplerFill="#ff421c" style="-fx-background-color: #6ed13c;" text="Login">
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="160.0" layoutY="378.0" onAction="#handleCancelButton" prefHeight="50.0" prefWidth="100.0" ripplerFill="#ff421c" style="-fx-background-color: #6ed13c;" text="Cancel">
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </JFXButton>
+         </children>
+</AnchorPane>
